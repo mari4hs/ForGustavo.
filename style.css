@@ -1,0 +1,139 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffdde1;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+h1 {
+    color: #ff4f8b;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff4f8b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+btm:hover {
+    background: #e73e7b;
+}
+
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background-color: #ffdde1;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #ff4f8b;
+}
+
+.post {
+    background: #fff3f3;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    color: #ff4f8b;
+}
+
+/* Estilos do Carrossel */
+#carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.slide img, .slide video {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide img:hover, .slide video:hover {
+    transform: scale(1.1);
+}
+
+.slide p {
+    font-size: 18px;
+    color: #ff4f8b;
+    font-weight: bold;
+}
+
+button {
+    background: #ff4f8b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background: #e73e7b;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #ff4f8b;
+    color: white;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: #e73e7b;
+}
+
+/*Aplica Poppins a todos ostitulos importantes*/
+h1, h2, h3, .titulo, .subtitulo, .post-texto {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /*Deixa mais destacado*/
+    color: #333; /*Cor neutra bonita*/
+}
+
+/*Deixa os textos dos posts mais leves e elegantes*/
+.post-texto {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+}

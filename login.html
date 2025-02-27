@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pense e digite a senha secreta</h2>
+      <input type="password" id="senha" />
+      <button onclick="VerificarSenha()">Entrar</button>
+      <p id="mensagem"></p>
+    </div>
+
+    <script>
+      function VerificarSenha() {
+        const senhaCorreta = "cinema";
+        let senha = document.getElementById("senha").value;
+        let mensagem = document.getElementById("mensagem");
+
+        if (senha == senhaCorreta) {
+          window.location.href = "blog.html";
+        } else {
+          mensagem.innerText =
+            "SENHA ERRADA!! Está tentando invadir o coração da pessoa errada?";
+        }
+      }
+    </script>
+  </body>
+</html>
