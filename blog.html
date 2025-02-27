@@ -8,18 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Música de fundo -->
-    <audio id="bgMusic" autoplay loop>
-      <source
-        src="Rex Orange County - AMAZING (Lyrics).mp3"
-        type="audio/mpeg"
-      />
-      Seu navegador não suporta o elemento de áudio.
+        <!-- Música de fundo -->
+    <audio id="musica" loop>
+      <source src="Rex Orange County - AMAZING (Lyrics).mp3" type="audio/mp3">
+      Seu navegador não suporta áudio.
     </audio>
 
-    <!-- Botão para controlar a música -->
-    <button id="toggleMusic" class="music-btn">Pausar Música</button>
+    <button onclick="tocarMusica()">Tocar Música</button>
 
+    <script>
+      function tocarMusica() {
+        var audio = document.getElementById("musica");
+        audio.play();
+      }
+    </script>
     <div class="container">
       <h1 class="bem-vindo">Agora simm, meu amor!❤️‍🔥</h1>
       <p>Este é o seu, o meu e o nosso rsrs cantinho especial!...</p>
